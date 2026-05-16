@@ -30,7 +30,7 @@ function App() {
   return (
     <div className="app">
       <RippleBackground rows={12} cols={30} cellSize={48} />
-      <CustomCursor />
+      {entered && <CustomCursor />}
 
       <main className="content">
         <MusicPlayer entered={entered} />

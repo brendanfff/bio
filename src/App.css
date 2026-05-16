@@ -257,9 +257,9 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  background: rgba(10, 10, 15, 0.25);
-  backdrop-filter: blur(32px);
-  -webkit-backdrop-filter: blur(32px);
+  background: rgba(10, 10, 15, 0.15);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
   cursor: default;
   transition: opacity 0.4s ease;
 }
