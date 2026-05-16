@@ -29,17 +29,17 @@ function App() {
 
   return (
     <div className="app">
-      <div className={`blur-target${!entered ? ' blurred' : ''}`}>
-        <RippleBackground rows={12} cols={30} cellSize={48} />
-        <main className="content">
-          <MusicPlayer entered={entered} />
-          <ProfileCard />
-          <footer className="footer">
-            <span>© 2026 — built with milk</span>
-          </footer>
-        </main>
-      </div>
+      <RippleBackground rows={12} cols={30} cellSize={48} />
       <CustomCursor />
+
+      <main className="content">
+        <MusicPlayer entered={entered} />
+        <ProfileCard />
+        <footer className="footer">
+          <span>© 2026 — built with milk</span>
+        </footer>
+      </main>
+
       {!entered && <EnterOverlay onEnter={() => setEntered(true)} />}
     </div>
   );
