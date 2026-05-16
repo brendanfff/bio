@@ -19,12 +19,14 @@
   --radius: 16px;
 }
 
-html {
-  cursor: none;
-}
+@media (hover: hover) and (pointer: fine) {
+  html {
+    cursor: none;
+  }
 
-a, button, [role="button"] {
-  cursor: none;
+  a, button, [role="button"] {
+    cursor: none;
+  }
 }
 
 .app {

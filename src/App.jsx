@@ -27,10 +27,12 @@ function App() {
     return () => clearTimeout(timer);
   }, []);
 
+  const isTouch = 'ontouchstart' in window || navigator.maxTouchPoints > 0;
+
   return (
     <div className="app">
       <RippleBackground rows={12} cols={30} cellSize={48} />
-      {entered && <CustomCursor />}
+      {entered && !isTouch && <CustomCursor />}
 
       <main className="content">
         <MusicPlayer entered={entered} />
