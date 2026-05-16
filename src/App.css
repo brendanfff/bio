@@ -258,10 +258,14 @@ body {
   align-items: center;
   justify-content: center;
   background: rgba(10, 10, 15, 0.4);
-  backdrop-filter: blur(32px);
-  -webkit-backdrop-filter: blur(32px);
   cursor: default;
   transition: opacity 0.4s ease;
+}
+
+.blur-target.blurred {
+  filter: blur(24px);
+  pointer-events: none;
+  user-select: none;
 }
 
 .enter-overlay.leaving {
