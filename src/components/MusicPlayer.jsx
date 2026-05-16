@@ -12,7 +12,7 @@ export default function MusicPlayer({ entered }) {
 
   const getAudio = useCallback(() => {
     if (!audioRef.current) {
-      const audio = new Audio('/Nun%204%20No%20Schmuck%20-%20Glokk40Spaz.mp3');
+      const audio = new Audio(import.meta.env.BASE_URL + 'Nun%204%20No%20Schmuck%20-%20Glokk40Spaz.mp3');
       audio.loop = true;
       audio.volume = cubicVolume(volume);
       audioRef.current = audio;

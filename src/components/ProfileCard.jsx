@@ -3,7 +3,7 @@ import Typewriter from './Typewriter';
 import SocialLinks from './SocialLinks';
 
 const BG_IMAGE = 'https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=600&q=80';
-const AVATAR = '/prof.jpg';
+const AVATAR = import.meta.env.BASE_URL + 'prof.jpg';
 
 export default function ProfileCard() {
   return (
